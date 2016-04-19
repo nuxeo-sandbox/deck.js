@@ -120,7 +120,8 @@ slide.
 		
 		$(opts.selectors.hashLink).attr('href', hashPath);
 		if (Modernizr.history) {
-			window.history.replaceState({}, "", hashPath);
+			//window.history.replaceState({}, "", hashPath);
+			window.location.href = hashPath;
 		}
 	});
 	
